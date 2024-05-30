@@ -15,7 +15,7 @@ const CardSucursal: React.FC<CardSucursalProps> = ({ sucursal, onEdit }) => {
   return (
     <Card sx={{ maxWidth: 400, margin: 2, boxShadow: 3, borderRadius: 2 }}>
       <CardContent>
-        <Typography variant="h5" component="div" sx={{ color: '#fb6376', fontWeight: 'bold' }}>
+        <Typography variant="h5" component="div" sx={{ color: '#3282F6', fontWeight: 'bold' }}>
           {sucursal.nombre}
         </Typography>
         <Divider sx={{ my: 1 }} />
@@ -26,14 +26,14 @@ const CardSucursal: React.FC<CardSucursalProps> = ({ sucursal, onEdit }) => {
           <strong>Dirección:</strong> {sucursal.domicilio.calle} {sucursal.domicilio.numero}, {sucursal.domicilio.localidad.provincia.nombre}, {sucursal.domicilio.localidad.provincia.pais.nombre} 
         </Typography>
         <Typography variant="body2" color="text.secondary">
-          <strong>Casa Matriz:</strong> {sucursal.esCasaMatriz ? <CheckCircleOutline sx={{ color: '#4caf50' }} /> : <HighlightOff sx={{ color: '#f44336' }} />}
+          <strong>Casa Matriz:</strong> {sucursal.esCasaMatriz ? <CheckCircleOutline sx={{ color: '#19FF00' }} /> : <HighlightOff sx={{ color: '#FF0000' }} />}
         </Typography>
       </CardContent>
       <Box sx={{ display: 'flex', justifyContent: 'center', p: 2 }}>
         <Button
           onClick={() => onEdit(sucursal)}
           variant="contained"
-          sx={{ bgcolor: '#fb6376', '&:hover': { bgcolor: '#d73754' }, mr: 1 }}
+          sx={{ bgcolor: '#3282F6', '&:hover': { bgcolor: '#000C7B' }, mr: 1 }}
           startIcon={<Edit />}
         >
           Editar

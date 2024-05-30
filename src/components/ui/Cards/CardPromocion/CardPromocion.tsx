@@ -71,12 +71,12 @@ const PromocionCard: React.FC<PromocionCardProps> = ({ promocion, onEdit, onView
                             variant="outlined" 
                             onClick={() => onViewDetails(promocion)} 
                             sx={{ 
-                                color: '#e91e63', 
-                                borderColor: '#e91e63', 
+                                color: '#0023F5', 
+                                borderColor: '#0023F5', 
                                 '&:hover': { 
-                                    bgcolor: '#e91e63', 
+                                    bgcolor: '#0023F5', 
                                     color: '#fff',
-                                    borderColor: '#e91e63',
+                                    borderColor: '#0023F5',
                                 } 
                             }}
                         >

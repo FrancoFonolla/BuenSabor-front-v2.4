@@ -627,7 +627,7 @@ const ModalProducto: React.FC<ModalProductoProps> = ({
                             variant="contained"
                             color="primary"
                             disabled={!selectedInsumoId || cantidadInsumo <= 0}
-                            style={{ backgroundColor: '#e91e63', color: '#fff' }}
+                            style={{ backgroundColor: '#0023F5', color: '#fff' }}
                         >
                             Añadir
                         </Button>
